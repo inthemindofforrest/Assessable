@@ -8,7 +8,7 @@ using std::endl;
 
 int main()
 {
-	/*char UserInput;
+	char UserInput;
 	bool OkToGo = false;
 	int Wins = 0;
 
@@ -22,7 +22,7 @@ int main()
 		cout << "Games won: \n" << Wins << endl;
 		cout << "Which game would youl like to play?" << endl;
 		cout << "1) Tic-Tac-Toe" << endl;
-		cout << "2) Number Guessing Game" << endl;
+		//cout << "2) Number Guessing Game" << endl;
 		cout << "e) Quit" << endl;
 
 		cin >> UserInput;
@@ -79,7 +79,6 @@ int main()
 		default:
 			break;
 		}
-	}*/
-	TicTacToe(2);
+	}
 	return 0;
 }
