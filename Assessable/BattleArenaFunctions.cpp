@@ -5,14 +5,16 @@ void Introduction(CHARACTER Player)
 	
 	cout << "Welcome to the world of ________!" << endl;
 	cout << "And who might you be?" << endl;
-	//Player.Name = CharacterName(Player);
+	Player.Name = CharacterName(Player);
+	cout << "So your name is " << Player.Name << "?" << endl;
+	system("PAUSE");
 	
 }
 
 char CharacterName(CHARACTER Player)
 {
 	char UserInput;
-	cout << "1) John\t\t2) James\n3) Jimmy\t\t4) Jack\n";
+	cout << "1) John\t\t2) James\n3) Jimmy\t4) Jack\n";
 	cin >> UserInput;
 
 	switch (UserInput)

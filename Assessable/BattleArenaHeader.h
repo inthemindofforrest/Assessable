@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <string>
 using std::cout;
 using std::cin;
 using std::endl;
@@ -24,3 +25,5 @@ struct CHARACTER
 
 
 char BattleArena();
+void Introduction(CHARACTER Player);
+char CharacterName(CHARACTER Player);

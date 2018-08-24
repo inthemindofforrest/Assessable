@@ -8,7 +8,7 @@ using std::endl;
 
 int main()
 {
-	char UserInput;
+	/*char UserInput;
 	bool OkToGo = false;
 	int Wins = 0;
 
@@ -70,14 +70,16 @@ int main()
 					Wins++;
 				}
 			break;
+		case '3':
+			BattleArena();
+			break;
 		case 'e':
 			OkToGo = true;
 			break;
 		default:
 			break;
 		}
-
-		
-	}
+	}*/
+	TicTacToe(2);
 	return 0;
 }

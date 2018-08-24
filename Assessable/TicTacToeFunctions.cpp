@@ -3,12 +3,13 @@
 void DrawMap(char Grid[3][3])
 {
 	//Draw the game board one line at a time.
-	cout << Grid[0][0] << " | " << Grid[0][1] << " | " << Grid[0][2] << endl;
-	cout << "__|___|__" << endl;
-	cout << Grid[1][0] << " | " << Grid[1][1] << " | " << Grid[1][2] << endl;
-	cout << "__|___|__" << endl;
-	cout << Grid[2][0] << " | " << Grid[2][1] << " | " << Grid[2][2] << endl;
-	cout << "  |   |  " << endl;
+	cout << "  1   2   3  " << endl;
+	cout << "  " << Grid[0][0] << " | " << Grid[0][1] << " | " << Grid[0][2] << endl;
+	cout << "1 __|___|__" << endl;
+	cout << "  " << Grid[1][0] << " | " << Grid[1][1] << " | " << Grid[1][2] << endl;
+	cout << "2 __|___|__" << endl;
+	cout << "  " << Grid[2][0] << " | " << Grid[2][1] << " | " << Grid[2][2] << endl;
+	cout << "3   |   |  " << endl;
 }
 
 void AITurn(char Grid[3][3])

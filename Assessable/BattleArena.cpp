@@ -7,6 +7,7 @@
 ·         Project submitted as an executable binary file that can be run external to an IDE
 
 ·         Source code and project files also submitted for review*/
+
 CHARACTER Player;
 
 char BattleArena()
@@ -16,8 +17,7 @@ char BattleArena()
 
 	while (!OkToGo)
 	{
-
-
+		Introduction(Player);
 
 	}
 
