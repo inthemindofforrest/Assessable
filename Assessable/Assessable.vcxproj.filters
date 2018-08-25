@@ -19,6 +19,9 @@
     <Filter Include="Source Files\Functions">
       <UniqueIdentifier>{7af760bd-9421-4461-8fca-46a6e621dd1b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Class">
+      <UniqueIdentifier>{d396db32-c6f0-4234-9511-8e40ecd19bee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

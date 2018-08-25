@@ -1,29 +1,23 @@
 #pragma once
 #include <iostream>
 #include <string>
-using std::cout;
-using std::cin;
-using std::endl;
-using std::rand;
-using std::string;
+#include <conio.h>
+using namespace std;
 
-struct ATTRIBUTES
+
+class Characters
 {
+public:
+
 	int Health;
-	int Stamina;
-	int Defense;
-	int Courage;
-	int Intelligence;
-};
-
-struct CHARACTER
-{
-	ATTRIBUTES Attributes;
 	string Name;
-	string Class;
+	string AttackName;
+	int MinAttack;
+	int MaxAttack;
 };
-
 
 char BattleArena();
-void Introduction(CHARACTER Player);
-char CharacterName(CHARACTER Player);
+void Introduction(Characters Team1[], Characters Team2[]);
+void PAUSE();
+int RetrieveRandomNumber(int min, int max);
+void DisplayStats(Characters Team1[], Characters Team2[]);

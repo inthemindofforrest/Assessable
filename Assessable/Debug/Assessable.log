@@ -1,2 +1,7 @@
-﻿  TicTacToeFunctions.cpp
+﻿  BattleArena.cpp
+c:\users\s189069\source\repos\assessable\assessable\battlearena.cpp(19): warning C4101: 'UserInput': unreferenced local variable
+  BattleArenaFunctions.cpp
+  main.cpp
+c:\users\s189069\source\repos\assessable\assessable\main.cpp(16): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
   Assessable.vcxproj -> C:\Users\s189069\source\repos\Assessable\Debug\Assessable.exe

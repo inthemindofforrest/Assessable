@@ -13,16 +13,17 @@ int main()
 	int Wins = 0;
 
 	//Scrable up da randomness
-	srand(time_t(NULL));
+	srand(time(NULL));
 
 	while (!OkToGo)
 	{
 		//Requesting the user to choose which game to play
 		system("CLS");
 		cout << "Games won: \n" << Wins << endl;
-		cout << "Which game would youl like to play?" << endl;
+		cout << "Which game would you like to play?" << endl;
 		cout << "1) Tic-Tac-Toe" << endl;
-		//cout << "2) Number Guessing Game" << endl;
+		cout << "2) Number Guessing Game" << endl;
+		cout << "3) Battle Arena" << endl;
 		cout << "e) Quit" << endl;
 
 		cin >> UserInput;
@@ -49,26 +50,56 @@ int main()
 			break;
 
 		case '2':
+			/*system("CLS");
+			cout << "Would you like to choose the number, or the computer?:" << endl;
+			cout << "1) Me\n2) Computer";
+			cin >> UserInput;
+			if (UserInput == 1)
+			{
+				system("CLS");
+				cout << "Difficulty:" << endl;
+				cout << "1) Easy\n2) Medium\n3) Hard";
+				cin >> UserInput;
+
+				if (UserInput == '1')
+					if (NumberGuess(0, 50, 5, 2))
+					{
+						Wins++;
+					}
+				if (UserInput == '2')
+					if (NumberGuess(0, 100, 10, 2))
+					{
+						Wins++;
+					}
+				if (UserInput == '3')
+					if (NumberGuess(0, 250, 25, 2))
+					{
+						Wins++;
+					}
+			}
+			else if(UserInput == 2)
+			{*/
 			system("CLS");
 			cout << "Difficulty:" << endl;
 			cout << "1) Easy\n2) Medium\n3) Hard";
 			cin >> UserInput;
 
 			if (UserInput == '1')
-				if (NumberGuess(0, 50, 5))
+				if (NumberGuess(0, 50, 5, 1))
 				{
 					Wins++;
 				}
 			if (UserInput == '2')
-				if (NumberGuess(0, 100, 10))
+				if (NumberGuess(0, 100, 7, 1))
 				{
 					Wins++;
 				}
 			if (UserInput == '3')
-				if (NumberGuess(0, 250, 25))
+				if (NumberGuess(0, 250, 9, 1))
 				{
 					Wins++;
 				}
+			//}
 			break;
 		case '3':
 			BattleArena();
@@ -81,4 +112,10 @@ int main()
 		}
 	}
 	return 0;
+
+
+	while (false)
+	{
+		cout << "I will never run!!!!" << endl;
+	}
 }
