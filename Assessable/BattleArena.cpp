@@ -21,11 +21,7 @@ char BattleArena()
 	Characters Team1[6] = {IronMan, WarMachine, BlackWidow, BlackPanther, TheVision, SpiderMan};
 	Characters Team2[6] = { CaptainAmerica, Hawkeye, Falcon, BuckyBarnes, AntMan, ScarletWitch };
 	
-
-	while (!OkToGo)
-	{
 		Introduction(Team1, Team2);
-	}
 
 
 	return ' ';

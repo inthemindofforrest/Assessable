@@ -2,9 +2,7 @@
 #include "TicTacToeHeader.h"
 #include "NumberGuessHeader.h"
 #include "BattleArenaHeader.h"
-using std::cout;
-using std::cin;
-using std::endl;
+using namespace std;
 
 int main()
 {
@@ -50,11 +48,11 @@ int main()
 			break;
 
 		case '2':
-			/*system("CLS");
+			system("CLS");
 			cout << "Would you like to choose the number, or the computer?:" << endl;
 			cout << "1) Me\n2) Computer";
 			cin >> UserInput;
-			if (UserInput == 1)
+			if (UserInput == '1')
 			{
 				system("CLS");
 				cout << "Difficulty:" << endl;
@@ -77,8 +75,8 @@ int main()
 						Wins++;
 					}
 			}
-			else if(UserInput == 2)
-			{*/
+			else
+			{
 			system("CLS");
 			cout << "Difficulty:" << endl;
 			cout << "1) Easy\n2) Medium\n3) Hard";
@@ -99,9 +97,10 @@ int main()
 				{
 					Wins++;
 				}
-			//}
+			}
 			break;
 		case '3':
+			UserInput = ' ';
 			BattleArena();
 			break;
 		case 'e':
@@ -112,10 +111,4 @@ int main()
 		}
 	}
 	return 0;
-
-
-	while (false)
-	{
-		cout << "I will never run!!!!" << endl;
-	}
 }

@@ -21,3 +21,7 @@ void Introduction(Characters Team1[], Characters Team2[]);
 void PAUSE();
 int RetrieveRandomNumber(int min, int max);
 void DisplayStats(Characters Team1[], Characters Team2[]);
+void Fighting(Characters Team1[], Characters Team2[]);
+bool CheckForWinner(Characters Team1[], Characters Team2[]);
+void FirstTeamWon();
+void SecondTeamWon();
