@@ -6,6 +6,7 @@ using namespace std;
 
 int main()
 {
+
 	char UserInput;
 	bool OkToGo = false;
 	int Wins = 0;
@@ -46,6 +47,9 @@ int main()
 					Wins++;
 				}
 			break;
+#pragma region DSADAS
+
+#pragma endregion
 
 		case '2':
 			system("CLS");
