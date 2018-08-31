@@ -1,6 +1,8 @@
 #include "BattleArenaHeader.h"
 #include<string>
 
+
+
 void Introduction(Characters Team1[], Characters Team2[])
 {
 	bool OkToGo = false;
@@ -38,13 +40,6 @@ int RetrieveRandomNumber(int min, int max)
 {
 	return (rand() % (max + 1) + min);
 }
-void DisplayStats(Characters Team1[], Characters Team2[]) 
-{
-	for (int i = 0; i < 6; i++)
-	{
-		cout << Team1[i].Name << " has " << Team1[i].Health << " left\t\t\t" << Team2[i].Name << " has " << Team2[i].Health << " left" << endl;
-	}
-}
 void Fighting(Characters Team1[], Characters Team2[])
 {
 	int TempAttack;
@@ -78,6 +73,13 @@ void Fighting(Characters Team1[], Characters Team2[])
 		cout << Team2[i].Name << " attacked " << Team2[AttackedCharacter].Name << " with " <<
 			Team2[i].AttackName << " and inflicted " << TempAttack << " damage\n" << endl;
 		system("PAUSE");
+	}
+}
+void DisplayStats(Characters Team1[], Characters Team2[]) 
+{
+	for (int i = 0; i < 6; i++)
+	{
+		cout << Team1[i].Name << " has " << Team1[i].Health << " left\t\t\t" << Team2[i].Name << " has " << Team2[i].Health << " left" << endl;
 	}
 }
 void FirstTeamWon()
