@@ -1,8 +1,12 @@
 #include <iostream>
+#include <fstream>
 #include "TicTacToeHeader.h"
 #include "NumberGuessHeader.h"
 #include "BattleArenaHeader.h"
 using namespace std;
+
+bool saveGame(int wins);
+bool loadGame(int * wins);
 
 int main()
 {
@@ -14,6 +18,18 @@ int main()
 	//Scrable up da randomness
 	srand(time(NULL));
 
+	if (loadGame(&Wins))
+	{
+		cout << "Save File Loaded." << endl;
+		cout << "Wins: " << Wins << endl;
+		system("PAUSE");
+	}
+	else
+	{
+			cout << "Save File could not load..." << endl;
+			system("PAUSE");
+	}
+
 	while (!OkToGo)
 	{
 		//Requesting the user to choose which game to play
@@ -23,6 +39,7 @@ int main()
 		cout << "1) Tic-Tac-Toe" << endl;
 		cout << "2) Number Guessing Game" << endl;
 		cout << "3) Battle Arena" << endl;
+		cout << "s) Save Progress" << endl;
 		cout << "e) Quit" << endl;
 
 		cin >> UserInput;
@@ -107,6 +124,9 @@ int main()
 			UserInput = ' ';
 			BattleArena();
 			break;
+		case 's':
+			saveGame(Wins);
+			break;
 		case 'e':
 			OkToGo = true;
 			break;
@@ -115,4 +135,40 @@ int main()
 		}
 	}
 	return 0;
+}
+
+
+bool loadGame(int * wins)
+{
+	string Wins;
+
+	ifstream SaveFile ("Save.txt");
+	if (SaveFile.is_open())
+	{
+		while (getline(SaveFile,Wins))
+		{
+			*wins = stoi(Wins);
+			SaveFile.close();
+			return true;
+		}
+		SaveFile.close();
+		return false;
+	}
+}
+
+bool saveGame(int wins)
+{
+	ofstream SaveFile;
+	if (SaveFile)
+	{
+		SaveFile.open("save.txt");
+		SaveFile << wins << endl;
+		SaveFile.close();
+	}
+	else
+	{
+		cout << "error while creating a save file" << endl;
+		system("PAUSE");
+		return false;
+	}
 }
