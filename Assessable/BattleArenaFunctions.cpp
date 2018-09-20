@@ -37,9 +37,10 @@ void Fighting(Characters Team1[], Characters Team2[], int Size)
 	for (int i = 0; i < Size; i++)
 	{
 		system("CLS");
-		int AttackedCharacter;
+		int AttackedCharacter = RetrieveRandomNumber(0, 5);
 
 		//Which character gets attacked
+		//while(Team2[AttackedCharacter].Health <= 0)
 		 AttackedCharacter = RetrieveRandomNumber(0, 5);
 
 		//How much damage does team one do to team 2
@@ -54,14 +55,15 @@ void Fighting(Characters Team1[], Characters Team2[], int Size)
 		system("CLS");
 
 		//Which character gets attacked
-		AttackedCharacter = RetrieveRandomNumber(0, 5);
+		//while (Team1[AttackedCharacter].Health <= 0)
+			AttackedCharacter = RetrieveRandomNumber(0, 5);
 
 		//How much damage does team one do to team 2
 		TempAttack = RetrieveRandomNumber(Team2[i].MinAttack, Team2[i].MaxAttack);
 		Team1[AttackedCharacter].Health -= TempAttack;
 
 		//Display to the player the Action
-		cout << Team2[i].Name << " attacked " << Team2[AttackedCharacter].Name << " with " <<
+		cout << Team2[i].Name << " attacked " << Team1[AttackedCharacter].Name << " with " <<
 			Team2[i].AttackName << " and inflicted " << TempAttack << " damage\n" << endl;
 		system("PAUSE");
 	}
@@ -108,13 +110,13 @@ bool CheckForWinner(Characters Team1[], Characters Team2[], int Size)
 		if (Team1[i].Health <= 0)
 		{
 			DeadOnTeam1++;
-			cout << DeadOnTeam1;
+			//cout << DeadOnTeam1;
 			system("PAUSE");
 		}
 		if (Team2[i].Health <= 0)
 		{
 			DeadOnTeam2++;
-			cout << DeadOnTeam2;
+			//cout << DeadOnTeam2;
 			system("PAUSE");
 		}
 		
