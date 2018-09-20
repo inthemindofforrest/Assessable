@@ -64,9 +64,6 @@ int main()
 					Wins++;
 				}
 			break;
-#pragma region DSADAS
-
-#pragma endregion
 
 		case '2':
 			system("CLS");
