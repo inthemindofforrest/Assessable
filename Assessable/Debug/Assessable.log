@@ -1,5 +1,6 @@
 ﻿  main.cpp
 c:\users\s189069\source\repos\assessable\assessable\main.cpp(19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\s189069\source\repos\assessable\assessable\main.cpp(174): warning C4715: 'saveGame': not all control paths return a value
 c:\users\s189069\source\repos\assessable\assessable\main.cpp(157): warning C4715: 'loadGame': not all control paths return a value
+c:\users\s189069\source\repos\assessable\assessable\main.cpp(174): warning C4715: 'saveGame': not all control paths return a value
+  LINK : C:\Users\s189069\source\repos\Assessable\Debug\Assessable.exe not found or not built by the last incremental link; performing full link
   Assessable.vcxproj -> C:\Users\s189069\source\repos\Assessable\Debug\Assessable.exe
