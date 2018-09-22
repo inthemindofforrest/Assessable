@@ -2,6 +2,7 @@
 
 char BattleArena()
 {
+	
 	Characters IronMan{ 100, "Iron Man", "Iron Blast", 5, 10 },
 		WarMachine{ 100, "War Machine", "War Blast", 5, 10 },
 		BlackWidow{ 100, "Black Widow", "Widow Blast", 5, 10 },
@@ -16,8 +17,8 @@ char BattleArena()
 		AntMan{ 100, "Ant Man", "Man Blast", 5, 10 },
 		ScarletWitch{ 100, "Scarlet Witch", "Witch Blast", 5, 10 };
 
-	Characters Team1[6] = { IronMan, WarMachine, BlackWidow, BlackPanther, TheVision, SpiderMan };
-	Characters Team2[6] = { CaptainAmerica, Hawkeye, Falcon, BuckyBarnes, AntMan, ScarletWitch };
+	Characters Team1[] = { IronMan, WarMachine, BlackWidow, BlackPanther, TheVision, SpiderMan };
+	Characters Team2[] = { CaptainAmerica, Hawkeye, Falcon, BuckyBarnes, AntMan, ScarletWitch };
 
 	Introduction(Team1, Team2, sizeof(Team1) / sizeof(Characters));
 

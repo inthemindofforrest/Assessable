@@ -1,7 +1,12 @@
-﻿  BattleArenaFunctions.cpp
+﻿  BattleArena.cpp
+  BattleArenaFunctions.cpp
+  main.cpp
+c:\users\s189069\source\repos\assessable\assessable\main.cpp(19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Generating code
-  0 of 223 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+c:\users\s189069\source\repos\assessable\assessable\numberguessfunction.cpp(62): warning C4715: 'GuessingAlgaorithm': not all control paths return a value
+c:\users\s189069\source\repos\assessable\assessable\numberguess.cpp(56): warning C4715: 'NumberGuess': not all control paths return a value
+c:\users\s189069\source\repos\assessable\assessable\main.cpp(171): warning C4715: 'saveGame': not all control paths return a value
+c:\users\s189069\source\repos\assessable\assessable\main.cpp(154): warning C4715: 'loadGame': not all control paths return a value
+  All 223 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
   Assessable.vcxproj -> C:\Users\s189069\source\repos\Assessable\Release\Assessable.exe

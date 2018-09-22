@@ -7,6 +7,8 @@ void Introduction(Characters Team1[], Characters Team2[], int Size)
 {
 	bool OkToGo = false;
 
+	//IntroductionToGame(Team1, Team2, Size);
+
 	while (!OkToGo)
 	{
 		//Do a full fight cycle of both teams
@@ -27,6 +29,83 @@ void Introduction(Characters Team1[], Characters Team2[], int Size)
 	}
 	return;
 }
+
+//void IntroductionToGame(Characters Team1[], Characters Team2[], int Size)
+//{
+//	//Naming the Soldiers
+//	{
+//		system("CLS");
+//		cout << "A long long time ago, two nations faught for power." << endl;
+//		cout << "The first nation had " << Size << " soldiers." << endl;
+//		cout << endl;
+//		cin.clear();
+//		cout << "What is your first soldiers name?" << endl;
+//		getline(cin, Team1[0].Name);
+//		cin.clear();
+//		cout << "What is your second soldiers name?" << endl;
+//		getline(cin, Team1[1].Name);
+//		cout << "What is your third soldiers name?" << endl;
+//		getline(cin, Team1[2].Name);
+//		cout << "What is your fourth soldiers name?" << endl;
+//		getline(cin, Team1[3].Name);
+//		cout << "What is your fifth soldiers name?" << endl;
+//		getline(cin, Team1[4].Name);
+//		cout << "What is your sixth soldiers name?" << endl;
+//		getline(cin, Team1[5].Name);
+//
+//		system("CLS");
+//
+//		cout << "The second nation had " << Size << " soldiers." << endl;
+//		cout << endl;
+//		cout << "What is their first soldiers name?" << endl;
+//		getline(cin, Team2[0].Name);
+//		cout << "What is their second soldiers name?" << endl;
+//		getline(cin, Team2[1].Name);
+//		cout << "What is their third soldiers name?" << endl;
+//		getline(cin, Team2[2].Name);
+//		cout << "What is their fourth soldiers name?" << endl;
+//		getline(cin, Team2[3].Name);
+//		cout << "What is their fifth soldiers name?" << endl;
+//		getline(cin, Team2[4].Name);
+//		cout << "What is their sixth soldiers name?" << endl;
+//		getline(cin, Team2[5].Name);
+//	}
+//
+//	//Naming attacks for each Soldier
+//	{
+//		cout << "Each soldier had an attack." << endl;
+//		cout << endl;
+//		cout << "What is " << Team1[0].Name << "'s attack?" << endl;
+//		getline(cin, Team1[0].AttackName);
+//		cout << "What is " << Team1[1].Name << "'s attack?" << endl;
+//		getline(cin, Team1[1].AttackName);
+//		cout << "What is " << Team1[2].Name << "'s attack?" << endl;
+//		getline(cin, Team1[2].AttackName);
+//		cout << "What is " << Team1[3].Name << "'s attack?" << endl;
+//		getline(cin, Team1[3].AttackName);
+//		cout << "What is " << Team1[4].Name << "'s attack?" << endl;
+//		getline(cin, Team1[4].AttackName);
+//		cout << "What is " << Team1[5].Name << "'s attack?" << endl;
+//		getline(cin, Team1[5].AttackName);
+//		
+//		system("CLS");
+//
+//		cout << endl;
+//		cout << "What is " << Team2[0].Name << "'s attack?" << endl;
+//		getline(cin, Team2[0].AttackName);
+//		cout << "What is " << Team2[1].Name << "'s attack?" << endl;
+//		getline(cin, Team2[1].AttackName);
+//		cout << "What is " << Team2[2].Name << "'s attack?" << endl;
+//		getline(cin, Team2[2].AttackName);
+//		cout << "What is " << Team2[3].Name << "'s attack?" << endl;
+//		getline(cin, Team2[3].AttackName);
+//		cout << "What is " << Team2[4].Name << "'s attack?" << endl;
+//		getline(cin, Team2[4].AttackName);
+//		cout << "What is " << Team2[5].Name << "'s attack?" << endl;
+//		getline(cin, Team2[5].AttackName);
+//	}
+//
+//}
 int RetrieveRandomNumber(int min, int max)
 {
 	return (rand() % (max + 1) + min);

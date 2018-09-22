@@ -24,3 +24,4 @@ void Fighting(Characters Team1[], Characters Team2[], int Size);
 bool CheckForWinner(Characters Team1[], Characters Team2[], int Size);
 void winningTeam(int);
 void SortTeams(Characters Team1[], Characters Team2[], int Size);
+//void IntroductionToGame(Characters Team1[], Characters Team2[], int Size);
